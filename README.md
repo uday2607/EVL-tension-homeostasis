@@ -3,8 +3,6 @@
 Code accompanying the paper:
 
 **Apical domain mechanosensation regulates tissue tension homeostasis**
-Naoya Hino, Tushna Kapoor, Uday Ram Gubbala, Edouard Hannezo, and Carl-Philipp Heisenberg
-Institute of Science and Technology Austria (ISTA)
 
 ---
 
