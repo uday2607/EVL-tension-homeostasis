@@ -15,8 +15,6 @@ Each EVL cell is represented as a prism with:
 - Height `h(t)`
 - **Volume conservation**: V = V(t=6 hpf) = constant throughout the simulation window (6-9 hpf). This gives `h = V / (π r²)`.
 
-Note: EVL cell volume decreases by ~17% between 5 and 9 hpf experimentally (see paper Supp. Fig. 1c). A sensitivity analysis (Supp. Fig. 3d) confirms that model predictions change by less than 5% under ±30% volume perturbations, justifying the conservation assumption.
-
 ### Tissue tension
 
 From the cell energy and the Young-Laplace relation:
