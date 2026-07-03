@@ -48,20 +48,14 @@ MYOSIN_AU = {
     "WT_9hpf":  2.20,    # drops ~3-fold during epiboly
 }
 
-# ── EVL cell volume (µm³, from Supp. Fig. 1c) ────────────────────────────────
-# Same 10 cells tracked at 5, 7, 9 hpf (paired measurements)
-# Mean values; volume decreases ~17% from 5 to 9 hpf
-
-VOLUME_HPF = np.array([5.0, 7.0, 9.0])          # time points (hpf)
-VOLUME_MEAN = np.array([7205.9, 6291.7, 5968.8]) # mean cell volume (µm³)
-
+# ── EVL cell volume ────────────────────────────────
 # Volume used in model: V0 = V at t = 6 hpf (interpolated), held constant
 V0 = float(np.interp(6.0, VOLUME_HPF, VOLUME_MEAN))   # = 6748.8 µm³
 
 # ── Initial cell geometry ─────────────────────────────────────────────────────
 
-R0 = 16.0                          # initial apical radius (µm)
-A0 = np.pi * R0**2                 # initial apical area (µm²) ≈ 804 µm²
+R0 = 16.0                         # initial apical radius (µm)
+A0 = np.pi * R0**2                # initial apical area (µm²) ≈ 804 µm²
 H0 = V0 / (np.pi * R0**2)         # initial height (µm), from volume conservation
 
 
